@@ -21,6 +21,10 @@ app.get("/profile", function (req, res) {
   res.render("profile", { user: users[0] });
 });
 
+app.get("/transfer", function (req, res) {
+  res.render("transfer", { user: users[0] });
+});
+
 app.use("/account", accountRoutes);
 app.use("/services", servicesRoutes);
 
