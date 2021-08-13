@@ -21,17 +21,8 @@ app.get("/profile", function (req, res) {
   res.render("profile", { user: users[0] });
 });
 
-app.get("/transfer", function (req, res) {
-  res.render("transfer", { user: users[0] });
-});
-
 app.use("/account", accountRoutes);
 app.use("/services", servicesRoutes);
-
-// const accountData = fs.readFileSync('src/json/accounts.json', {encoding: 'utf8'});
-// const accounts = JSON.parse(accountData);
-// const userData = fs.readFileSync('src/json/users.json', {encoding: 'utf8'});
-// const users = JSON.parse(userData);
 
 const port = 3000;
 app.listen(port, () => {
