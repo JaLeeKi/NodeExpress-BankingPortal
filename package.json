@@ -23,6 +23,10 @@
   },
   "homepage": "https://github.com/pluralsight-projects/NodeExpress-BankingPortal#readme",
   "dependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/register": "^7.14.5",
     "ejs": "2.6.1",
     "express": "4.16.3"
   },
